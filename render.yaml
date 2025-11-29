@@ -1,1 +1,12 @@
-
+services:
+  - type: web
+    name: pdf-tools-pro
+    env: python
+    buildCommand: |
+      apt-get update && \
+      apt-get install -y ghostscript poppler-utils tesseract-ocr libreoffice && \
+      pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
