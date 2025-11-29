@@ -1,0 +1,47 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# PDF output and downloads
+*.pdf
+*.zip
+*.docx
+*.pptx
+*.xlsx
+ocr.txt
+
+# IDE settings
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+
+# Render build folders
+.render/￼Enter
