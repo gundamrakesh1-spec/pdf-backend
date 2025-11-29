@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pdf-tools-pro
+    name: pdf-backend
     env: python
     buildCommand: |
       apt-get update && \
